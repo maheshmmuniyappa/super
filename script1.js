@@ -3,7 +3,7 @@
 
 const publicKey = '78be724acf3c021b17b985785965e747';
 const privateKey = '2dcc5ae03990719f61bebe83dd167f5a7df31937';
-const apiUrl = 'http(s)://gateway.marvel.com/';
+const apiUrl = 'https://gateway.marvel.com/';
 const ts = new Date().getTime();
 
 
