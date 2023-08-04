@@ -31,13 +31,13 @@ function addFavourite(id) {
 }
 const showCorrespondingHeros = () => {
     let inputValue = document.getElementById("my-search").value;
-    
+    console.log(inputValue)
     fetch(
       `https://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}&nameStartsWith=${inputValue}`
     )
       .then((response) => response.json())
       .then((data) => {
-        
+        console.log(data)
         data = data.data
         console.log(data)
         let html = "";
